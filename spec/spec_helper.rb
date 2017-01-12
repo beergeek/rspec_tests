@@ -17,6 +17,6 @@ RSpec.configure do |c|
     Facter.clear_messages
   end
   c.after(:suite) do
-    RSpec::Puppet::Coverage.report!()
+    RSpec::Puppet::Coverage.report!(100)
   end
 end
