@@ -5,7 +5,8 @@ require 'puppet-syntax/tasks/puppet-syntax'
 require 'metadata-json-lint/rake_task'
 require 'puppetlabs_spec_helper/module_spec_helper'
 require 'rspec-puppet-utils'
-require './spec/utils/helpers.rb'
+require 'matchers/file_matchers.rb'
+require 'utils/helpers.rb'
 RSpec.configure do |c|
   c.hiera_config = 'spec/fixtures/hiera/hiera.yaml'
   c.before :each do

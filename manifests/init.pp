@@ -53,4 +53,7 @@ class rspec_tests {
     mode   => '0777',
   }
 
+  file { '/tmp/test1':
+    ensure => file,
+  }
 }

@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 describe 'rspec_tests' do
   context 'with default values for all parameters' do
     let(:facts) do
