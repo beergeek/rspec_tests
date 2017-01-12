@@ -6,4 +6,8 @@ class rspec_tests::clown {
     group  => 'root',
     mode   => '0600',
   }
+
+  file { '/tmp/clown0':
+    ensure => file,
+  }
 }
